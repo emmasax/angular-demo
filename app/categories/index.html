@@ -1,0 +1,11 @@
+<h2>Browse categories</h2>
+<ul class="all-cats">
+  <li ng-repeat="category in categories" class="category">
+    <b>{{ category.safe_name }}</b>
+    <ul>
+      <li><a href="#/policies/whatsnext/{{category.name}}">What's next</a></li>
+      <li><a href="#/policies/progress/{{category.name}}">Progress</a></li>
+      <li><a href="#/policies/all/{{category.name}}">All</a></li>
+    </ul>
+  </li>
+</ul>

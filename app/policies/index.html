@@ -1,0 +1,13 @@
+
+<p><a href="#/">Back to categories</a></p>
+
+<h2>{{ category | titleCase }} - {{ type | titleCase }}</h2>
+
+<label for="searchTerm">Search policies:</label>
+<input id="searchTerm" type="text" ng-model="searchTerm">
+
+<ul>
+  <li ng-repeat="policy in policies | filter : searchTerm">
+    {{ policy.body }} - <a href="{{ policy.url }}">{{ policy.url_title }}</a>
+  </li>
+</ul>

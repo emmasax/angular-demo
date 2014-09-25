@@ -1,0 +1,41 @@
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 1em 0;
+  padding: 1em 0 0;
+  border-top: 1px solid #eee;
+}
+
+li {
+  padding: 0 0 1em;
+  line-height: 1.4;
+  margin: 0 0 1em;
+  list-style-type: none;
+  border-bottom: 1px solid #eee;
+}
+
+label {
+  font-weight: bold;
+}
+
+.category {
+  float: left;
+  width: 33%;
+}
+.category ul {
+  border: 0;
+  margin: 0;
+}
+.category li {
+  padding-bottom: 0.25em;
+  border: 0;
+  margin: 0;
+}
+.all-cats {
+  border: 0;
+  overflow: hidden;
+}
