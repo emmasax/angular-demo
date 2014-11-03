@@ -38,7 +38,7 @@ var policyServices = angular.module('policyServices', ['ngResource']);
 policyServices.factory('PolicyService', ['$resource', function($resource) {
   return {
     query: function(cat, type) {
-      return $resource('https://www.whitehouse.gov/facts/json/' + type + '/' + cat, {}, {
+      return $resource('http://www.whitehouse.gov/facts/json/' + type + '/' + cat, {}, {
         query: {method: 'GET', isArray: true }
       }).query();
     }
